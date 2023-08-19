@@ -60,6 +60,21 @@ def donate():
     return render_template('donate.html', year=year, data=data)
 
 
+@app.route('/hunger')
+def hunger():
+    return render_template('hunger.html')
+
+
+@app.route('/poverty')
+def poverty():
+    return render_template('poverty.html')
+
+
+@app.route('/qualityEducation')
+def qedu():
+    return render_template('QualityEdu.html')
+
+
 @app.route('/payment', methods=['POST', "GET"])
 def payment():
     if request.method == "POST":

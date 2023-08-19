@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{% block title %}
+		<title>About Us</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/hunger.css') }}" class="style">
+{% endblock %}
+
+{% block content %}
+			<main class="main-content">
+				<div class="fullwidth-block inner-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7">
+							<div class="grid min-h-screen items-center justify-center bg-black">
+        <div class="grid p-7 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+            <!-- image 1  -->
+            <div class="group relative items-center justify-center overflow-hidden cursor-pointer">
+                <div class="h-100 w-96">
+                    <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+                        src="https://i2.wp.com/michael-niemann.com/tempwp/wp-content/uploads/2016/10/A_main_street_in_Kibera_10445077183.jpg?w=1575&ssl=1" alt="No Poverty image">
+                </div>
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
+                    <h1 class="text-3xl font-bold " style="color:orange">What’s the goal here?</h1>
+                    <p
+                        class="text-2xl italic text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Aims to end poverty in all its forms and ensuring that all have access to resources and economic opportunities necessary to lead a fulfilling life.
+                    </p>
+                </div>
+            </div>
+            <!-- image 1  -->
+            <!-- content 1 start  -->
+            <div class="group relative items-center justify-center overflow-hidden cursor-pointer">
+                <div class="h-100 w-96">
+                    <h1 class="text-3xl font-bold " style="color:orange">How can we achieve no poverty?</h1>
+                    <p class="text-2xl italic text-white mb-3">
+                        To achieve no poverty, we must invest in education and skills training, creating opportunities for stable employment. We need to establish robust social safety nets, ensuring access to healthcare and basic services. By promoting gender equality and empowering marginalized communities, we can address root causes of poverty.
+                </div>
+            </div>
+            <!-- content 1 end -->
+            <!-- content 2 start  -->
+            <div class="group relative items-center justify-center overflow-hidden cursor-pointer">
+                <div class="h-100 w-96">
+                    <h1 class="text-3xl font-bold "style="color:orange">Why?</h1>
+                    <p class="text-2xl italic text-white mb-3">
+                        Economic Opportunities: Create sustainable economic growth by fostering industries.
+                        Social Safety Nets: Establish robust social safety net programs that provide financial support.
+                        Education and Skills: Ensure accessible, quality education and skills training.
+                        Sustainable Development: Implement environmentally conscious strategies that prioritize long-term prosperity without depleting resources.
+                    </p>
+                </div>
+            </div>
+            <!-- content 2 end -->
+            <!-- image 2  -->
+            <div class="group relative items-center justify-center overflow-hidden cursor-pointer">
+                <div class="h-100 w-96">
+                    <img class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500"
+                        src="https://himalayanlife.com/wp-content/uploads/2020/07/E_PRINT_INVERTED_01-1500x1500.jpg" alt=" Zero Hunger image">
+                </div>
+                <div
+                    class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
+                    <h1 class="text-3xl font-bold "style="color:orange">What’s the goal here?</h1>
+                    <p
+                        class="text-2xl italic text-black mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Ensuring that all people have access to resources, basic services, and economic opportunities.
+                    </p>
+                </div>
+            </div>
+            <!-- image 2  -->
+
+        </div>
+
+    </div>	
+							</div>
+							<div class="col-md-4 col-md-push-1">
+								<aside class="sidebar">
+									<div class="widget">
+										<h3 class="widget-title">Goals</h3>
+										<ul class="discography-list">
+											<li>
+												<figure class="cover"><img src="http://127.0.0.1:5501/images%20for%20download/no%20poverty.jpg" alt="thumbnail 1"></figure>
+												<div class="detail">
+													<h3><a href="#">NO POVERTY</a></h3>
+													<span class="year">GOAL 1</span>
+													<span class="track">Eradicating poverty by ensuring equal access to resources and opportunities for all</span>
+												</div>
+											</li>
+											<li>
+												<figure class="cover"><img src="http://127.0.0.1:5000/static/images/hunger.jpg" alt="thumbnail 2"></figure>
+												<div class="detail">
+													<h3><a href="#">ZERO HUNGER</a></h3>
+													<span class="year">Goal 2</span>
+													<span class="track">Achieving global food security through sustainable practices and equitable distribution</span>
+												</div>
+											</li>
+											<li>
+												<figure class="cover"><img src="https://www.ei-ie.org/image/Quality-education.jpg/lead.jpg" alt="thumbnail 3"></figure>
+												<div class="detail">
+													<h3><a href="#">QUALITY EDUCATION</a></h3>
+													<span class="year">Goal 4</span>
+													<span class="track">Inspiring lifelong learning through effective, meaningful, and inclusive education</span>
+												</div>
+											</li>
+											<li>
+												<figure class="cover"><img src="http://127.0.0.1:5000/static/images/good%20health%20and%20well%20being.jpg" alt="thumbnail 4"></figure>
+												<div class="detail">
+													<h3><a href="#">GOOD HEALTH AND WELL-BEING</a></h3>
+													<span class="year">Goal 3</span>
+													<span class="track">Promoting overall health and ensuring well-being for all individuals and communitiess</span>
+												</div>
+											</li>
+											<li>
+												<figure class="cover"><img src="http://127.0.0.1:5000/static/images/climate%20action.jpg" alt="thumbnail 5"></figure>
+												<div class="detail">
+													<h3><a href="#">CLIMATE ACTION</a></h3>
+													<span class="year">Goal 6</span>
+													<span class="track">Taking urgent steps to combat climate change and its impacts for a sustainable future</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</aside>
+							</div>
+						</div>
+					</div>
+				</div> <!-- .testimonial-section -->
+			</main>
+{% endblock %}
