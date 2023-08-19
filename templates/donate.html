@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-  <title>Title</title>
+  <title>Donate</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/donate.css') }}">
 {% endblock %}
 
@@ -10,7 +10,7 @@
   <header class="head">
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-4 fw-normal">Donate to us.</h1>
-      <p class="fs-5">Why Donate to us? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis dolor id massa molestie sollicitudin nec vitae libero. Phasellus et varius tellus. Integer aliquam, nulla et efficitur hendrerit, nunc est dignissim risus, porttitor dapibus felis dolor eget quam. In quis.</p>
+      <p class="fs-5">Why Donate to us? Empower change with your generosity. Donating to poverty alleviation causes transforms lives, bridges inequalities, and fosters hope. Together, we break the cycle of despair, sparking opportunities and brighter tomorrows. Your support fuels progress, creating a world where every individual thrives. Be the difference today and forge a path to a more equitable and prosperous future.</p>
     </div>
   </header>
 
@@ -75,10 +75,10 @@
         </div>
       </div>
     </div>
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-interval=300>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-inner">
 
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-interval=100>
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
           <div class="container" style="padding-top: 20px;">
             <div class="carousel-caption">
@@ -89,10 +89,10 @@
         </div>
 
         {% for data in data %}
-        <div class="carousel-item">
+        <div class="carousel-item" data-interval=100>
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
           <div class="container" style="padding-top: 20px;">
-            <div class="carousel-caption">
+            <div class="carousel-caption" data-interval=100>
               <h1>{{ data.name }}.</h1>
               <p class="opacity-75">Contributed ₹{{ data.amount }}.</p>
             </div>
