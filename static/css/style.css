@@ -8095,3 +8095,8 @@ body {
         color: #fd5927; }
 
 /*# sourceMappingURL=style.css.map */
+.owl-item {
+  padding: 20px;
+}.slides {
+  padding: 15px;
+}
